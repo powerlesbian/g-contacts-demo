@@ -14,6 +14,25 @@
     <title>G's contacts demo</title>
   </head>
   <body>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+    
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyDS_R7FU7gewKjNauZ_u5cRj5DhKUvlFE4",
+        authDomain: "gcontacts-demo.firebaseapp.com",
+        projectId: "gcontacts-demo",
+        storageBucket: "gcontacts-demo.appspot.com",
+        messagingSenderId: "61273790664",
+        appId: "1:61273790664:web:e4394b0ab44f696265adfd"
+      };
+    
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+    </script>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--

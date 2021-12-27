@@ -35,7 +35,7 @@ export default class RecordList extends Component {
   // This method will get the data from the database.
   componentDidMount() {
     axios
-      .get("http://128.199.91.95:5050/record/")
+      .get("//128.199.91.95:5050/record/")
       .then((response) => {
         this.setState({ records: response.data });
       })
@@ -46,7 +46,7 @@ export default class RecordList extends Component {
 
   // This method will delete a record based on the method
   deleteRecord(id) {
-    axios.delete("http://128.199.91.95:5050/" + id).then((response) => {
+    axios.delete("//128.199.91.95:5050/" + id).then((response) => {
       console.log(response.data);
     });
 
@@ -72,7 +72,8 @@ export default class RecordList extends Component {
   render() {
     return (
       <div>
-        <h3>Record List</h3>
+        <h3>Record List </h3>
+          <p>-Changes need to run to the DB and may take a few seconds to reflect. ♻️ Refresh to make sure.</p>
         <table className="table table-striped" style={{ marginTop: 20 }}>
           <thead>
             <tr>

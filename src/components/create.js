@@ -70,7 +70,7 @@ export default class Create extends Component {
 
 
     axios
-      .post("http://128.199.91.95:5050/record/add", newperson)
+      .post("//128.199.91.95:5050/record/add", newperson)
       .then((res) => {console.log(res.data);
 });
 
@@ -183,7 +183,7 @@ export default class Create extends Component {
         </form>
 
         <div id="status-message">
-          That's lovely! Thank you!
+          That's lovely! Go back to main records page to see it reflected in the database. Thank you!
         </div>
       </div>
     );
